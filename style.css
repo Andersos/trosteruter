@@ -1,0 +1,73 @@
+body {
+    background: url(images/bg.png);
+    background-size: 200px 200px;
+
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.error {
+    background: red;
+    color: #fff;
+}
+
+.line {
+    display: inline-block;
+    background: #ffc800;
+    color: #000;
+    padding: 0 0.5em;
+    margin-right: 5px
+}
+
+li {
+    list-style-type: none;
+    margin: 1em auto;
+    width: 200px;
+    text-align: left;
+}
+
+.horizontal li {
+    display: inline-block;
+    margin: 1em 0.4em;
+    width: auto;
+}
+
+h1 {
+    position: relative;
+}
+
+.flip {
+    background: url(images/flip.svg) no-repeat 50% 50%;
+    background-size: 46px 46px;
+    background-origin: border-box;
+
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+
+    width: 100px;
+    height: 100px;
+
+    text-indent: 5000em;
+    cursor: pointer;
+
+    border-radius: 100%;
+    border-width: 45px;
+    border-color: rgba(0, 0, 0, 0);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-transition: 1.6s ease;
+    -moz-transition: 1.6s ease;
+    -ms-transition: 1.6s ease;
+    -o-transition: 1.6s ease;
+    transition: 1.6s ease;
+}
+
+.flip.loading {
+    border-width: 0;
+    border-color: rgba(191, 255, 0, 1);
+}
